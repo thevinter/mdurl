@@ -17,7 +17,7 @@ const MarkdownPage = () => {
     const fetchMarkdown = async () => {
       try {
         const response = await fetch(
-          `http://65.109.13.225:5000/markdown/${fileId}.md`
+          `https://api.mdreader.com/markdown/${fileId}.md`
         );
 
         if (!response.ok) {

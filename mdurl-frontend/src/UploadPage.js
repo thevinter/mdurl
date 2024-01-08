@@ -34,7 +34,7 @@ const UploadPage = () => {
     const formData = new FormData();
     formData.append("file", selectedFile);
 
-    const uploadUrl = "http://65.109.13.225:5000/upload";
+    const uploadUrl = "https://api.mdreader.com/upload";
 
     try {
       const response = await fetch(uploadUrl, {
