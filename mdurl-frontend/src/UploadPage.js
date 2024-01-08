@@ -34,7 +34,7 @@ const UploadPage = () => {
     const formData = new FormData();
     formData.append("file", selectedFile);
 
-    const uploadUrl = "http://localhost:5000/upload";
+    const uploadUrl = "http://65.109.13.225:5000/upload";
 
     try {
       const response = await fetch(uploadUrl, {
